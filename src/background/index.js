@@ -13,15 +13,17 @@ chrome.runtime.onInstalled.addListener(function () {
                 new chrome.declarativeContent.PageStateMatcher({
                     pageUrl: {
                         // 适配所有域名以“www.”开头的网页
-                        hostPrefix: 'www.',
+                        // hostPrefix: 'www.',
+                        hostPrefix: 'https://our.ones.pro/',
+                        hostPrefix: 'https://ones.cn/',
                         // 海外官网
-                        // hostPrefix: 'ones.com',
+                        hostPrefix: 'ones.com',
                         // 适配所有域名以“.antgroup.com”结尾的网页
                         // hostSuffix: '.antgroup.com',
                         // 适配域名为“ant-design.antgroup.com”的网页
                         // hostEquals: 'ant-design.antgroup.com',
                         // 适配https协议的网页
-                        schemes: ['https'],
+                        // schemes: ['https'],
                     },
                 }),
             ],
